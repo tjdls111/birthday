@@ -1,7 +1,12 @@
 import React from "react";
+import TypeIt from "typeit-react";
+
+const SuperStrong = ({ children }) => {
+  return <strong style={{ fontSize: "80px" }}>{children}</strong>;
+};
 
 function Letter(props) {
-  return <div>letter 슬라이더 넣어도 좋을 듯</div>;
+  return <TypeIt>This will be typed in a `span` element!</TypeIt>;
 }
 
 export default Letter;
